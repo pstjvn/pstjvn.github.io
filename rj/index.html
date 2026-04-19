@@ -68,7 +68,7 @@
     </template>
     <h1>ЕС Райко Жинзифов № 43</h1>
     <main>
-
+        <h3>Зарежда се...</h3>
     </main>
     <script>
         (async function () {
@@ -151,6 +151,7 @@
                 });
                 fragment.appendChild(el);
             }
+            document.querySelector('main').querySelector('h3').remove();
             document.querySelector('main').appendChild(fragment);
         })();
     </script>
