@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>ЕС Райко Жинзифов № 43</title>
+    <title>Page not found</title>
 </head>
 
 <body>
     <h1>Пренасочваме Ви...</h1>
     <script>
+        // This is custom 404 fot github. If the user is aiming at
+        // RJ app thr path would be like `/rj/something` and in this case
+        // we need to recirect the user to the root or the app (i.e. `/rj`)
+        // and add the path as query string, which will be then picked up by
+        // the app itslef and internaly re-routed. Otherwise just show the error here.
         setTimeout(() => {
             const pathname = window.location.pathname
-            window.location.href = 'https://pstjvn.github.io/rj/?path=' + pathname
+            if (pathname.startsWith('/rj')) {
+                window.location.href = 'https://pstjvn.github.io/rj/?path=' + pathname
+            } else {
+                document.querySelector('h1').textContent = 'Page was not found 😢'
+            }
         }, 1000)
     </script>
 </body>
