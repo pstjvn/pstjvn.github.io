@@ -1,0 +1,1 @@
+import{o as e}from"./store-DOgxnU9n.js";import{a as t,b as n,o as r,s as i,v as a,y as o}from"./helpers-D3NHptCD.js";function s(e){return n(i,e)}function c(e){return o(r,e)}function l(e){return a(t,e)}var u=e();function d({children:e}){return(0,u.jsxs)(`div`,{children:[`Възникна грешка: `,e]})}export{s as i,l as n,c as r,d as t};
