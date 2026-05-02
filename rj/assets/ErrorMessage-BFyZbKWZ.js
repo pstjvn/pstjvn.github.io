@@ -1,0 +1,1 @@
+import{o as e}from"./store-DOgxnU9n.js";var t=e();function n({children:e}){return(0,t.jsxs)(`div`,{children:[`Възникна грешка: `,e]})}export{n as t};
