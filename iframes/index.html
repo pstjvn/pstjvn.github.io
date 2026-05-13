@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes demo</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <h1>Iframe demo</h1>
+    <p>
+        <span>Highlights how to dynamically create an iframe with source being "about:blank" and:</span>
+    <ol>
+        <li>Insert HTML inside with values from the parent context</li>
+        <li>Execute arbitraty script in the iframe context</li>
+        <li>Link external script in such a way as for it to be downloaded and executed</li>
+    </ol>
+    <span>Open the web console to see debug messages from the scripts</span>
+    </p>
+    <script>document.write(createDynamicIframe())</script>
+</body>
+
+</html>
